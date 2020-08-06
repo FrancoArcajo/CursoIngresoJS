@@ -12,18 +12,40 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {
-	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+	// declarar variables
+	let numero;
+	let seguir;
+	let sumaNegativos = 0;
+	let contadorNegativos = 0;
+	let sumaPositivos = 0;
+	let contadorPositivos = 0;
+	let contadorCeros = 0;
+	let contadorPares = 0;
+	let promedioPositivos;
+	let promedioNegativos;
+	let diferencia;
 
-	respuesta="si";
-
-	while(respuesta=="si")
-	{
+	 // generar un bucle del tipo mientras el usuario quiera (do while)
+	 do {
+			 numero = parseInt(prompt("Ingrese un numero"));
 		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		     seguir = prompt("Quiere ingresar otro numero?: ");
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+
+	 } while( seguir == 's');
+
+	 // codigo dentro del bucle (es el codigo que se debe realizar n cantidad de veces)
+
+
+	 // codigo despues del bucle (esto se realiza una vez terminado el bucle)
+
+
+
+
+
+
+
+	// mostrar informacion
+	document.write("Hola " + nombre + "</br>");
+	document.write("Hola " + nombre2);
 }//FIN DE LA FUNCIÓN
